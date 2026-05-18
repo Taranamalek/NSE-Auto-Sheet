@@ -44,7 +44,7 @@ client = gspread.authorize(creds)
 
 spreadsheet_id = "1_c4CMWNb2-GLDzTzIMM9mRdl3-Z5nw_wUQaT2b3uWOU" 
 
-worksheet = client.open_by_key(spreadsheet_id).worksheet("Top 250 Stocks") #वॉल्यूम डेटा टूल
+worksheet = client.open_by_key(spreadsheet_id).worksheet("Top 250 Stocks") 
 
 
 
@@ -194,7 +194,7 @@ if data_to_insert:
 
     except Exception as e:
 
-        print(f"Google Sheet Error: {str(e)}")वेब Apps और ऑनलाइन टूल
+        print(f"Google Sheet Error: {str(e)}")
 
 else:
 
